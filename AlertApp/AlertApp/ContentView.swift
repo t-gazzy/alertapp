@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State var text = ""
+    @ObservedObject var viewModel: AlertViewModel = .init()
+    
     var body: some View {
         VStack {
             TextField("入力してください", text: $text)
@@ -17,7 +19,7 @@ struct ContentView: View {
                 .padding()
             Text("分後に通知します")
             Button("設定", action: {
-                
+                viewModel.setValue(value: text)
             })
             .padding()
             .accentColor(Color.white)
