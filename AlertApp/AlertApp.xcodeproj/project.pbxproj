@@ -50,6 +50,7 @@
 		6F2ABDC42A3371AF00F9C47C /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		6F2ABDC72A33728D00F9C47C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		6F2ABDCA2A33751500F9C47C /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
+		6F2ABDCC2A34633000F9C47C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		6F2ABD982A336CF100F9C47C /* AlertApp */ = {
 			isa = PBXGroup;
 			children = (
+				6F2ABDCC2A34633000F9C47C /* Info.plist */,
 				6F2ABDC92A3374F900F9C47C /* Model */,
 				6F2ABDC62A33727000F9C47C /* Util */,
 				6F2ABDC32A33718C00F9C47C /* ViewModel */,
@@ -456,6 +458,7 @@
 				DEVELOPMENT_TEAM = HG94CYMA9B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlertApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -485,6 +488,7 @@
 				DEVELOPMENT_TEAM = HG94CYMA9B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlertApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
