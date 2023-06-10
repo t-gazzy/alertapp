@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var text = ""
+    var model: AlertModel = .init()
     @ObservedObject var viewModel: AlertViewModel = .init()
     
     var body: some View {

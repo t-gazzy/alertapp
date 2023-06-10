@@ -11,7 +11,7 @@ protocol AlertModelDelegate: AnyObject {
     func timer()
 }
 
-class AlertModel {
+class AlertModel: AlertModelProtocol {
     
     var _timer: Timer?
     weak var delegate: AlertModelDelegate?

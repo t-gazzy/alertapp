@@ -10,7 +10,15 @@ import SwiftUI
 
 class AlertViewModel: ObservableObject {
     
-    private var _model: AlertModel = .init()
+    private var _model: AlertModelProtocol
+    
+    init(_model: AlertModelProtocol? = nil) {
+        if let m = _model {
+            self._model = m
+            return
+        }
+        self._model = AlertModel()
+    }
     
     func setValue(value: String) -> Bool {
         guard let number = Int(value) else {
