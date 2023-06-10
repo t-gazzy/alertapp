@@ -17,7 +17,14 @@ class AlertViewModel: ObservableObject {
             Logger.error("set invalid value")
             return false
         }
+        _model.delegate = self
         _model.startTimer(minutes: number)
         return true
+    }
+}
+
+extension AlertViewModel: AlertModelDelegate {
+    func timer() {
+        Logger.info("delegate")
     }
 }
