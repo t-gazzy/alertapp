@@ -8,7 +8,7 @@
 import Foundation
 
 protocol AlertModelDelegate: AnyObject {
-    func timer()
+    func timer(minutes: Int)
 }
 
 class AlertModel: AlertModelProtocol {
@@ -22,7 +22,7 @@ class AlertModel: AlertModelProtocol {
         
         self._timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(seconds), repeats: false, block: {_ in
             Logger.info("\(seconds) seconds later")
-            self.delegate?.timer()
+            self.delegate?.timer(minutes: minutes)
         })
     }
 }

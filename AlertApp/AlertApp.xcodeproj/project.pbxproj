@@ -11,7 +11,6 @@
 		6F2ABD9C2A336CF100F9C47C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABD9B2A336CF100F9C47C /* ContentView.swift */; };
 		6F2ABD9E2A336CF300F9C47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2ABD9D2A336CF300F9C47C /* Assets.xcassets */; };
 		6F2ABDA12A336CF300F9C47C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2ABDA02A336CF300F9C47C /* Preview Assets.xcassets */; };
-		6F2ABDAB2A336CF300F9C47C /* AlertAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABDAA2A336CF300F9C47C /* AlertAppTests.swift */; };
 		6F2ABDB52A336CF300F9C47C /* AlertAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABDB42A336CF300F9C47C /* AlertAppUITests.swift */; };
 		6F2ABDB72A336CF300F9C47C /* AlertAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABDB62A336CF300F9C47C /* AlertAppUITestsLaunchTests.swift */; };
 		6F2ABDC52A3371AF00F9C47C /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABDC42A3371AF00F9C47C /* AlertViewModel.swift */; };
@@ -24,6 +23,7 @@
 		6F2ABDD42A346A7000F9C47C /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABDCA2A33751500F9C47C /* AlertModel.swift */; };
 		6F2ABDD52A346A7400F9C47C /* AlertModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABDD22A34693200F9C47C /* AlertModelProtocol.swift */; };
 		6F2ABDD62A346F3100F9C47C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABDC72A33728D00F9C47C /* Logger.swift */; };
+		6F2ABDDA2A34705400F9C47C /* AlertModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABDD92A34705400F9C47C /* AlertModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 		6F2ABD9D2A336CF300F9C47C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F2ABDA02A336CF300F9C47C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6F2ABDA62A336CF300F9C47C /* AlertAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F2ABDAA2A336CF300F9C47C /* AlertAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAppTests.swift; sourceTree = "<group>"; };
 		6F2ABDB02A336CF300F9C47C /* AlertAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2ABDB42A336CF300F9C47C /* AlertAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAppUITests.swift; sourceTree = "<group>"; };
 		6F2ABDB62A336CF300F9C47C /* AlertAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		6F2ABDCD2A3466D800F9C47C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		6F2ABDCF2A34678700F9C47C /* AlertViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModelTests.swift; sourceTree = "<group>"; };
 		6F2ABDD22A34693200F9C47C /* AlertModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModelProtocol.swift; sourceTree = "<group>"; };
+		6F2ABDD92A34705400F9C47C /* AlertModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 		6F2ABDA92A336CF300F9C47C /* AlertAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				6F2ABDAA2A336CF300F9C47C /* AlertAppTests.swift */,
 				6F2ABDCF2A34678700F9C47C /* AlertViewModelTests.swift */,
+				6F2ABDD92A34705400F9C47C /* AlertModelTests.swift */,
 			);
 			path = AlertAppTests;
 			sourceTree = "<group>";
@@ -322,9 +322,9 @@
 				6F2ABDD42A346A7000F9C47C /* AlertModel.swift in Sources */,
 				6F2ABDD62A346F3100F9C47C /* Logger.swift in Sources */,
 				6F2ABDD12A34682700F9C47C /* AlertViewModel.swift in Sources */,
-				6F2ABDAB2A336CF300F9C47C /* AlertAppTests.swift in Sources */,
 				6F2ABDD52A346A7400F9C47C /* AlertModelProtocol.swift in Sources */,
 				6F2ABDD02A34678700F9C47C /* AlertViewModelTests.swift in Sources */,
+				6F2ABDDA2A34705400F9C47C /* AlertModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
